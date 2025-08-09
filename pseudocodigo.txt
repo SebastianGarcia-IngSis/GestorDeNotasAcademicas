@@ -1,0 +1,55 @@
+INICIO
+    Definir listaCursos como lista vacía
+
+    MIENTRAS VERDADERO HACER
+        IMPRIMIR "▬▬▬▬▬▬▬▬▬▬GESTOR DE NOTAS ACADEMICAS▬▬▬▬▬▬▬▬▬▬"
+        IMPRIMIR "1. Registrar nuevo curso"
+        IMPRIMIR "2. Mostrar todos los cursos y notas"
+        IMPRIMIR "3. Calcular promedio general"
+        IMPRIMIR "4. Contar cursos aprobados y reprobados"
+        IMPRIMIR "5. Buscar curso por nombre (búsqueda lineal)"
+        IMPRIMIR "6. Actualizar nota de un curso"
+        IMPRIMIR "7. Eliminar un curso"
+        IMPRIMIR "8. Ordenar cursos por nota (ordenamiento burbuja)"
+        IMPRIMIR "9. Ordenar cursos por nombre (ordenamiento inserción)"
+        IMPRIMIR "10. Buscar curso por nombre (búsqueda binaria)"
+        IMPRIMIR "11. Simular cola de solicitudes de revisión"
+        IMPRIMIR "12. Mostrar historial de cambios (pila)"
+        IMPRIMIR "13. Salir"
+        IMPRIMIR "Seleccione una opción:"
+        
+        LEER opcion
+
+        SEGÚN opcion HACER
+            CASO "1":
+                IMPRIMIR "► Registrar nuevo curso"
+            CASO "2":
+                IMPRIMIR "► Mostrar todos los cursos"
+            CASO "3":
+                IMPRIMIR "► Calcular promedio general"
+            CASO "4":
+                IMPRIMIR "► Contar cursos aprobados y reprobados"
+            CASO "5":
+                IMPRIMIR "► Buscar curso por nombre"
+            CASO "6":
+                IMPRIMIR "► Actualizar nota de un curso"
+            CASO "7":
+                IMPRIMIR "► Eliminar un curso"
+            CASO "8":
+                IMPRIMIR "► Ordenar por nota (burbuja)"
+            CASO "9":
+                IMPRIMIR "► Ordenar por nombre (inserción)"
+            CASO "10":
+                IMPRIMIR "► Buscar por nombre (búsqueda binaria)"
+            CASO "11":
+                IMPRIMIR "► Simular cola de revisión"
+            CASO "12":
+                IMPRIMIR "► Mostrar historial de cambios (pila)"
+            CASO "13":
+                IMPRIMIR "Saliendo del programa. Gracias por usar el Gestor De Notas."
+                SALIR DEL BUCLE
+            OTRO CASO:
+                IMPRIMIR "Opción no válida. Ingrese un número del 1 al 13. Intente de nuevo."
+        FIN SEGÚN
+    FIN MIENTRAS
+FIN
