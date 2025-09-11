@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def menu():
     print("▬▬▬▬▬▬▬▬▬▬GESTOR DE NOTAS ACADEMICAS▬▬▬▬▬▬▬▬▬▬")
     print("1. Registrar nuevo curso")
@@ -24,15 +24,45 @@ while True:
 
     if opcion == "1":
         print("► Registrar nuevo curso")
+        nombre_curso = input("Ingresa el nombre del curso: ")
+        nota_curso = int(input("Ingresa la nota del curso: "))
+        cursos.append({"NOMBREE": nombre_curso, "NOTA": nota_curso})
+        print(f"Curso '{nombre_curso}' con una nota de: '{nota_curso}' registrado.\n")
         
     elif opcion == "2":
         print("► Mostrar todos los cursos")
+        if cursos:
+            print("Cursos registrados:")
+            for i, curso in enumerate(cursos, start=1):
+                print(f"{i}. {curso}")
+            print()
+        else:
+            print("No hay cursos registrados aún.\n")
         
     elif opcion == "3":
         print("► Calcular promedio general")
+        if cursos:
+            total_suma_notas = 0
+            print("El promedio de los cursos registrados son")
+            for curso in cursos:
+                total_suma_notas += curso["NOTA"]
+            promedio = total_suma_notas / len(cursos)
+            print(f"El promedio general es: {promedio:.2f}\n")
+        else:
+            print("No hay cursos registrados aún.\n")
         
     elif opcion == "4":
         print("► Contar cursos aprobados y reprobados")
+        if cursos:
+            nota_minima=int(input("Ingrese la nota minima de los cursos"))
+            aprobados = 0
+            reprobados = 0 
+            for curso in cursos:
+                if curso["NOTA"] < nota_minima:
+                    reprobados += 1
+                else:
+                    aprobados +=1
+            print(f"El estudiante ha aprobado '{aprobados}' cursos y reprobados '{reprobados}'")     
         
     elif opcion == "5":
         print("► Buscar curso por nombre")
@@ -65,6 +95,3 @@ while True:
     else:
         print(" Opción no válida. Ingrese un numero del 1 al 13.Intente de nuevo.")
     
-=======
-print ("Hola mundo")
->>>>>>> origin/main
