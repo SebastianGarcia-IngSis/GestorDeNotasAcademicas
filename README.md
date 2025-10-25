@@ -1,29 +1,15 @@
 # Gestor de Notas Académicas
-Redacción del problema
-El Gestor de Notas Académicas es un sistema diseñado para estudiantes que desean llevar un control organizado y eficiente de las calificaciones obtenidas en sus cursos. El objetivo principal es facilitar el registro, visualización y análisis de las notas para mejorar la gestión académica personal..
+¿Qué aprendiste de este proyecto?
 
-Este sistema está dirigido principalmente a estudiantes que buscan una herramienta sencilla, basada en consola, que les permita almacenar sus cursos y notas, calcular promedios, buscar y modificar información, y analizar su desempeño académico sin complicaciones ni interfaces gráficas complejas.
+Gracias a este proyecto, aprendí a usar conceptos de estructuras de datos como listas, uniones y cadenas en programas Python. También aprendí a usar algoritmos de búsqueda (burbuja, shell, binaria y lineal) para recuperar información con mayor precisión. Además, mejoré mi lógica de programación, bucles, reglas y estructuras anidadas.
 
-Requisitos del sistema
-Funcionales
-Registrar un nuevo curso y su nota correspondiente.
+¿Cuál fue la parte más difícil de la solución?
 
-Mostrar todas las notas y cursos registrados.
+Lo más difícil fue conseguir que cada parte funcionara correctamente, especialmente combinar el historial y encontrar una forma de ver los requisitos sin afectar a otras partes del código. También puede ser difícil crear código limpio y bien escrito que evite errores de ejecución y lo haga más legible.
 
-Calcular el promedio general de las notas.
+¿Qué te vendría bien si tuvieras más tiempo?
 
-Buscar un curso por nombre mediante búsqueda lineal y actualizar su nota.
-
-Eliminar un curso registrado.
-
-Ordenar cursos por nombre o por nota utilizando algoritmos de ordenamiento.
-
-Simular una cola para solicitudes de revisión de notas.
-
-Mantener un historial de cambios mediante una pila.
-
-No funcionales
-El sistema se ejecuta en consola utilizando Python.
+Si tienes tiempo extra, puedes usar un sistema de almacenamiento de archivos para guardar y recuperar automáticamente tu programa, incluso después de cerrarlo. Esto también mejorará la interfaz del menú para que sea más intuitiva y permita que más estudiantes ingresen sus puntuaciones y calificaciones. También estamos agregando comprobaciones de robustez adicionales para evitar errores de entrada de datos.
 
 No utiliza librerías externas, solo las funciones y estructuras básicas del lenguaje.
 
